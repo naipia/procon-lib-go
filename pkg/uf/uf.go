@@ -3,11 +3,11 @@
 //
 package uf
 
-// UnionFind はUnion-Find用のint型配列です。
+// UnionFind はUnion-Find用のint型スライスです。
 type UnionFind []int
 
-// newUnionFind はn要素のグループで初期化したUnion-Findデータ構造を作成し、そのポインタを返します。
-func newUnionFind(n int) *UnionFind {
+// NewUnionFind はn要素のグループで初期化したUnion-Findデータ構造を作成し、ポインタを返します。
+func NewUnionFind(n int) *UnionFind {
 	uf := make(UnionFind, n)
 	for i := 0; i < n; i++ {
 		uf[i] = -1

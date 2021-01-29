@@ -8,7 +8,7 @@ import (
 
 func TestBinaryIndexedTree(t *testing.T) {
 	n := 5
-	bit := newBinaryIndexedTree(n)
+	bit := NewBinaryIndexedTree(n)
 
 	for i := 0; i < n; i++ {
 		bit.Add(i, i+1)
@@ -33,7 +33,7 @@ func TestBinaryIndexedTree(t *testing.T) {
 
 func TestLowerBound(t *testing.T) {
 	n := 10
-	bit := newBinaryIndexedTree(n)
+	bit := NewBinaryIndexedTree(n)
 	for i := 0; i < n; i++ {
 		bit.Add(i, 1)
 	}
