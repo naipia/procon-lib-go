@@ -21,7 +21,7 @@ func TestAtcoderPractice2Sample1(t *testing.T) {
 	expected := []int{0, 1, 0, 1}
 
 	actual := []int{}
-	uf := newUnionFind(n)
+	uf := NewUnionFind(n)
 	for i := 0; i < q; i++ {
 		t, u, v := query[i][0], query[i][1], query[i][2]
 		if t == 0 {
